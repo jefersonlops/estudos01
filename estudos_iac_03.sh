@@ -9,9 +9,8 @@ chmod 775 ~/websites/food/
 cp -R /tmp/Template-food-main/* ~/websites/food/
 echo "Removendo arquivos temporários..."
 cd ~ && rm -rf /tmp/Template-food-main/ /tmp/main.zip
-#wget 
 echo "Docker-compose: Iniciando services..."
-docker-compose -f docker-compose.yaml up -d
+wget https://raw.githubusercontent.com/jefersonlops/estudos01/master/docker-compose.yaml && docker-compose -f docker-compose.yaml up -d
 echo "Container iniciado"
 echo "Enjoy ... =) "
 
